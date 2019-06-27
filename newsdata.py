@@ -17,7 +17,8 @@ query_autores = """select authors.name, count(*) as views from articles inner
                     log.status like '%200%' group
                     by authors.name order by views desc"""
 
-# Pergunta 3 Em qual dia apenas menos de 1 porcento das requisicoes produziram erros?
+# Pergunta 3 Em qual dia apenas menos de 1 porcento
+# das requisicoes produziram erros?
 query_erros = """select * from (
                   select access.day,
                   round(cast((100*errors.hits)
@@ -32,7 +33,7 @@ query_erros = """select * from (
                   as total where percent >= 1.0;"""
 
 
-# Query do banco de dados 
+# Query do banco de dados
 def query_db(sql_request):
     connect = psycopg2.connect(database="news")
     cursor = connect.cursor()
