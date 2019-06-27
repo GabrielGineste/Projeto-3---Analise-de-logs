@@ -10,6 +10,14 @@ Terceiro projeto para meu Nanodegree de Desenvolvedor Web Full Stack.
  2. Quem são os autores de artigos mais populares de todos os tempos?
  3. Em quais dias mais de 1% das requisições resultaram em erros?
 
+
+## Pré-requisitos para executar o programa.
+  - Python 3
+  - A biblioteca de conexão com Python Psycopg2
+  - A máquina vitual com as configurações cedidas pela Udacity , link na seção Modo de uso.
+  - O Banco de dados newsdata.sql também com link na seção Modo de uso.
+
+
 ## Desenvolvimento
 
 Esse projeto usa Python em conjunto com a DB-API.
@@ -21,7 +29,7 @@ Todas as querys e códigos rodam dentro de uma máquina virtual Linux configurad
  - Você precisará baixa e instalar o [Vagrant](https://www.vagrantup.com/).
  - E também a versão mais recente do [Virtual Box](https://www.virtualbox.org/).
  - Clone a [Máquina Virtual da Udacity](https://github.com/udacity/fullstack-nanodegree-vm).
- - Baixe o arquivo newsdata.sql disponível na página do curso. Extraia dentro do da pasta compartilhada com a MV.
+ - Baixe [aqui](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip). o arquivo newsdata.sql. Extraia dentro do da pasta compartilhada com a MV.
   - Para começar trabalhando no arquivo apenas use os comandos a seguir dentro da página onde sua MV está instalada:
     - ```vagrant up``` Inicia a máquina virtual.
     - ```vagrant ssh``` da o acesso a máquina virtual.
